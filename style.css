@@ -1,0 +1,244 @@
+
+* {
+    box-sizing: border-box;
+  }
+  body {
+    background-color: white;
+    font-family: 'arial', san-serif;
+    /* background-image: http://....; */
+  }
+  .navigation {
+    position:fixed;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: #18c1ee;
+    padding: 10px;
+    border-bottom: 1px black solid;
+  
+  }
+  .links {
+       float: right;
+       color: white;
+     
+  }  
+  
+  .YT-logo {
+    height: 20px; 
+  }
+  .YT-text {
+    vertical-align: top;
+    font-weight:700;
+    font-family: 'Montserrat', sans-serif;
+    color: Black;
+    text-decoration: none;
+  }
+  a {
+      vertical-align: top;
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    color:rgb(247, 170, 224);
+    font-weight:900;
+    font-size: 20px;
+    
+  }
+  .textBold {
+      font-weight:900;
+  }
+  .search-form {
+    margin: 15px;
+  }
+  .search-form-top {
+     margin: 0 0 15px 0;
+     vertical-align: top; 
+  }
+  
+  
+  .js-query {
+    border-radius: 5px;
+    
+  }
+  
+  .wikis {
+      width: 68%;
+      background-color: lightblue;
+      float: left;
+      border: 1px black solid;
+      margin-bottom: 18px;
+      padding: 10px;
+  }
+  .videos {
+      width: 30%;
+      background-color: lightgreen;
+      float: right;
+      border: 1px black solid;
+      padding: 10px;
+  }
+  .recipes {
+      width: 68%;
+      //background-color: lightpink;
+      border: 1px black dotted;
+    margin: 0 auto;
+      padding: 10px;
+  }
+  .video {
+      height: 170px;
+      width: 90%;
+      background-color: lightgrey;
+      border: 1px black solid;
+      margin: 0 auto;
+      
+  }
+  .hide {
+      display: none;
+  }
+  header {
+    text-align: center;
+    margin-top: 50px;
+  }  
+  .mainSection {
+      max-width: 50%;
+      text-align: center;
+      margin: 0 auto;
+  }
+  
+  main {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom:50px;
+    text-align: center;
+  }
+  
+  
+  p, h1, h2, h3, h4, h5 {
+    text-align: center;
+  }
+  .description {
+   max-width: 220px;
+   text-align: center;
+   margin: 0 auto 5px;
+  
+  }
+  .titleH2 {
+   //max-width: 220px;
+   text-align: center;
+   margin: 0 auto 10px;
+   font-weight: 900;
+   height:50px;
+   font-size: 25px;
+   
+  }
+  .results {
+    display: inline-grid;
+    padding: 5px;
+  }
+  .imgMainRecipe {
+    max-width: 200px;
+    max-height: 200px;
+    height: 200px;
+    width: 200px;
+    margin: 15px auto;
+    background-color: greenyellow;
+  }
+  .ingredients {
+    
+  }
+  .ingredient {
+    text-align: left;
+    margin: 0 0 5px 30px;
+  }
+  .step {
+    padding:10px;
+  }
+  
+  
+  
+  .footer {
+   margin: 0 auto 10px;
+   width: 100%;
+   display: block;
+   clear: both;
+  }
+  .centerText {
+    text-align: center;
+  }
+  img.thumbnail {
+    max-width: 220px;
+  }
+  
+  
+  .blackbox{
+    position: fixed;
+    background-color:rgba(0,0,0,0.8);
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+  
+  }
+  
+  .lightbox{
+    //background-color:white;
+    //width:80%;
+    //height:300px;
+    margin: 100px auto;
+  }
+  
+  .bottomBar {
+    background-color: black;
+    height: 137px;
+    text-align: center;
+  }
+  .footerText {
+    color: white;
+    
+  }
+  
+  
+  @media(max-width:500px) {
+   .mainSection {
+     max-width: 90%;
+    
+   }
+   .wikis {
+      width: 100%;
+       margin: 0 auto 18px;
+       
+  }
+  .videos {
+      width: 100%;
+      margin: 0 auto 18px;
+  }
+  .recipes {
+      width: 100%;
+      margin: 0 auto 18px;
+      }
+  .input-search-top {
+    display: none;
+  }
+      }
+  
+  @media (max-width: 320px) {
+   .mainSection {
+     max-width: 90%;
+   }
+   .wikis {
+      width: 100%;
+      margin: 0 auto 18px;
+  }
+  .videos {	
+      width: 100%;
+      margin: 0 auto 18px;
+  }
+  .recipes {
+      width: 100%;
+      margin: 0 auto 18px;
+  }
+  .input-search-top {
+    display: none;
+      }	
+  }
