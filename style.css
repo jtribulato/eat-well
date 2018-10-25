@@ -5,7 +5,7 @@
   body {
     background-color: white;
     font-family: 'arial', san-serif;
-    /* background-image: http://....; */
+    
   }
   .navigation {
     position:fixed;
@@ -20,7 +20,6 @@
   .links {
        float: right;
        color: white;
-     
   }  
   
   .YT-logo {
@@ -182,10 +181,10 @@
   }
   
   .lightbox{
-    //background-color:white;
-    //width:80%;
-    //height:300px;
-    margin: 100px auto;
+    /* background-color:white;
+    width:80%;
+    height:300px;
+    margin: 100px auto; */
   }
   
   .bottomBar {
