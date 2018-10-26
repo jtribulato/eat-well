@@ -50,9 +50,6 @@ function displayRecipeSearchData(data) {
 
     const results = recipes.map((item, index) => renderResult(item, index));
     $(".search-results").html(results);
-
-    // let title = recipes[0].title;
-    // $('.titleH2').html(`${title}`);
 }
 
 function renderResult(result, index) {
@@ -65,12 +62,9 @@ function renderResult(result, index) {
   <img src=${
         result.image
         } alt="search result image" class="result-image">
-        <br><span class="imgCredit"><span class="creditSmall">Credit:&nbsp;&nbsp;</span><a href="${result.sourceUrl}">${result.sourceName}</a></span>
+        <br><span class="imgCredit"><span class="creditSmall">Image ©&nbsp;</span><a href="${result.sourceUrl}">${result.sourceName}</a></span>
   </div>
-  
-  
-
-
+ 
   <div class="info-container">
   <p><span class="info-label">Cuisine:</span><br> ${result.cuisines.join(
             ", "
