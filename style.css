@@ -5,8 +5,19 @@
   body {
     background-color: white;
     font-family: 'arial', san-serif;
-    
+
   }
+
+.nav-link{
+  margin: 0 10px;
+}
+
+.dropdown-box{
+  background-color: blue;
+  position: fixed;
+  top: 40px;
+  width: 100%;
+}
   .navigation {
     position:fixed;
     top: 0px;
@@ -15,15 +26,15 @@
     background-color: #18c1ee;
     padding: 10px;
     border-bottom: 1px black solid;
-  
+
   }
   .links {
        float: right;
        color: white;
-  }  
-  
+  }
+
   .YT-logo {
-    height: 20px; 
+    height: 20px;
   }
   .YT-text {
     vertical-align: top;
@@ -41,7 +52,7 @@
     color:rgb(247, 170, 224);
     font-weight:900;
     font-size: 20px;
-    
+
   }
   .textBold {
       font-weight:900;
@@ -51,10 +62,10 @@
   }
   .search-form-top {
      margin: 0 0 15px 0;
-     vertical-align: top; 
+     vertical-align: top;
   }
   .js-query {
-    border-radius: 5px; 
+    border-radius: 5px;
   }
   .mainImg {
     max-width: 288px;
@@ -64,7 +75,7 @@
   }
   .info-label {
     font-size: 20px;
-    font-weight:900; 
+    font-weight:900;
   }
   .info-container {
     max-width: 288px;
@@ -111,20 +122,20 @@
     margin: 0 auto;
     padding: 10px;
   }
-  
+
   .hide {
       display: none;
   }
   header {
     text-align: center;
     margin-top: 50px;
-  }  
+  }
   .mainSection {
-      
+
       text-align: center;
       margin: 0 auto;
   }
-  
+
   main {
     display: block;
     margin: 0 auto;
@@ -132,8 +143,8 @@
     padding-bottom:50px;
     text-align: center;
   }
-  
-  
+
+
   p, h1, h2, h3, h4, h5 {
     text-align: center;
   }
@@ -141,7 +152,7 @@
    max-width: 220px;
    text-align: center;
    margin: 0 auto 5px;
-  
+
   }
   .titleH2 {
    text-align: center;
@@ -149,7 +160,7 @@
    font-weight: 900;
    height:50px;
    font-size: 25px;
-   
+
   }
   .results {
     display: inline-grid;
@@ -170,9 +181,9 @@
   .step {
     padding:10px;
   }
-  
-  
-  
+
+
+
   .footer {
    margin: 0 auto 10px;
    width: 100%;
@@ -185,8 +196,8 @@
   img.thumbnail {
     max-width: 220px;
   }
-  
-  
+
+
   .blackbox{
     position: fixed;
     background-color:rgba(0,0,0,0.8);
@@ -194,9 +205,9 @@
     right:0px;
     bottom:0px;
     left:0px;
-  
+
   }
- 
+
   .bottomBar {
     background-color: black;
     height: 137px;
@@ -204,16 +215,16 @@
   }
   .footerText {
     color: white;
-    
+
   }
-  
-  
+
+
   @media(max-width:500px) {
    .mainSection {
      max-width: 90%;
-    
+
    }
-   
+
   .recipes {
       width: 100%;
       margin: 0 auto 18px;
@@ -222,17 +233,17 @@
     display: none;
   }
       }
-  
+
   @media (max-width: 320px) {
    .mainSection {
      max-width: 90%;
    }
-   
+
   .recipes {
       width: 100%;
       margin: 0 auto 18px;
   }
   .input-search-top {
     display: none;
-      }	
+      }
   }

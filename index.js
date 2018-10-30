@@ -10,17 +10,27 @@ $(function () {
         var searchTerm = $(this).find('.js-query').val();
         getRequest(searchTerm);
     });
+
+    $('.cuisine').click(function (event) {
+        event.preventDefault();
+        var cuisine = $(this).text();
+        console.log(cuisine);
+        getRequest("", cuisine);
+    });
+
+
+
 });
 
-function getRequest(term) {
+function getRequest(term, cuisine) {
     let queryObject = {
-        cuisine: "american",
+        cuisine: cuisine || "",
         diet: "",
         intolerances: [],
         fillIngredients: true,
         instructionsRequired: true,
         addRecipeInformation: true,
-        query: term,
+        query: term  || "",
         offset: 0
     };
     const ajaxSettings = {
@@ -40,23 +50,13 @@ function getRequest(term) {
     $.ajax(ajaxSettings);
 }
 
-function displayMainImg(data) {
-    const img1 = true;
-    let term = "vegan";
-   getRequest(term)
-   const recipes = data.results;
-
-}
 
 
 
 function displayRecipeSearchData(data) {
     recipes = data.results;
-
-
     const results = recipes.map((item, index) => renderResult(item, index));
     $(".search-results").html(results);
-
 }
 
 function renderResult(result, index) {
@@ -72,7 +72,7 @@ function renderResult(result, index) {
         } alt="search result image" class="result-image">
         <br><span class="imgCredit"><span class="creditSmall">Image ©&nbsp;</span><a href="${result.sourceUrl}">${result.sourceName}</a></span>
   </div>
- 
+
   <div class="info-container">
   <p><span class="info-label">Cuisine:</span><br> ${result.cuisines.join(
             ", "
@@ -103,38 +103,11 @@ $(".img4").show();
 $(".blackbox").show();
 $(".blackbox").hide();
 
-
-// sourceName: "Will Cook for Smiles"
-//   sourceUrl: "http://willcookforsmiles.com/2013/07/avocado-cupcakes.html"
-//   spoonacularScore: 26
-//   spoonacularSourceUrl: "https://spoonacular.com/avocado-cupcakes-554001"
-
-
-// $.ajax({
-//   url:"wiki",
-//   //more stuff
-//   success:showWikis
-// })
-// $.ajax({
-//   url:"yt",
-//   //more stuff
-//   success:showYt
-// })
-// $.ajax({
-//   url:"recipes",
-//   //more stuff
-//   success:showRecipes
-// })
-
-// showRecipes(data){
-//   console.log(data)
-//   data.recipes.map(recipe => renderRecipe(recipe))
+// More requests to API.
+// function displayMainImg(data) {
+//     const img1 = true;
+//     let term = "vegan";
+//    getRequest(term)
+//    const recipes = data.results;
+//
 // }
-
-// showWikis(data){
-
-// };
-
-// showYt(data){
-
-// };
