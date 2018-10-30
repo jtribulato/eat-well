@@ -40,7 +40,13 @@ function getRequest(term) {
     $.ajax(ajaxSettings);
 }
 
+function displayMainImg(data) {
+    const img1 = true;
+    let term = "vegan";
+   getRequest(term)
+   const recipes = data.results;
 
+}
 
 
 
@@ -50,6 +56,7 @@ function displayRecipeSearchData(data) {
 
     const results = recipes.map((item, index) => renderResult(item, index));
     $(".search-results").html(results);
+
 }
 
 function renderResult(result, index) {
@@ -57,7 +64,8 @@ function renderResult(result, index) {
     const ingredients = result.missedIngredients.map((item, index) => item.name);
     return `
   <div data-index="${index}" class="result">
-  <h2 class="result-title "><span class="highlight"><a href="${result.id}">${result.title}</a></span></h2>
+  <h2 class="result-title "><span class="highlight">
+  <a href="${result.id}">${result.title}</a></span></h2>
   <div class="image-container-2">
   <img src=${
         result.image
@@ -76,7 +84,7 @@ function renderResult(result, index) {
             ", "
         )}</p>
   <p class="readyInMinutes"><span class="info-label">Ready in:</span> ${
-        result.readyInMinutes 
+        result.readyInMinutes
         } min.</p>
   </div>
   <div class="clear"></div>
@@ -86,8 +94,9 @@ function renderResult(result, index) {
 }
 
 
-
-
+$(".img2").show();
+$(".img3").show();
+$(".img4").show();
 
 
 

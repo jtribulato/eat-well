@@ -79,7 +79,17 @@
 .highlight {
   background: #fe0;
   box-shadow: 1rem 0 0 #fe0, -1rem 0 0 #fe0;
+}
+.highlight a{
   text-decoration: none;
+}
+.img1, .img2, .img3, .img4 {
+  display: inline-block;
+  margin: 0 10px;
+}
+.img1 {
+  width: 100%;
+  margin: 0;
 }
   .imgCredit a{
     color: black;
@@ -110,7 +120,7 @@
     margin-top: 50px;
   }  
   .mainSection {
-      max-width: 50%;
+      
       text-align: center;
       margin: 0 auto;
   }
