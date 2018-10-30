@@ -74,16 +74,15 @@
   display: none;
 }
 .readyInMinutes {
-  /* display: none;  */
+  display: inherit;
 }
 .highlight {
-  //background: #fe0;
+  background: #fe0;
   box-shadow: 1rem 0 0 #fe0, -1rem 0 0 #fe0;
   text-decoration: none;
 }
   .imgCredit a{
     color: black;
-    //padding: 2px;
     text-decoration: none;
     font-size: 10px;
   }
@@ -98,7 +97,6 @@
   }
   .recipes {
     width: 68%;
-    //background-color: lightpink;
     border: 1px black dotted;
     margin: 0 auto;
     padding: 10px;
@@ -155,9 +153,6 @@
     margin: 15px auto;
     background-color: greenyellow;
   }
-  .ingredients {
-    
-  }
   .ingredient {
     text-align: left;
     margin: 0 0 5px 30px;
@@ -191,14 +186,7 @@
     left:0px;
   
   }
-  
-  .lightbox{
-    /* background-color:white;
-    width:80%;
-    height:300px;
-    margin: 100px auto; */
-  }
-  
+ 
   .bottomBar {
     background-color: black;
     height: 137px;
