@@ -70,6 +70,17 @@
     max-width: 288px;
     margin: 0 auto;
   }
+.ingredients {
+  display: none;
+}
+.readyInMinutes {
+  /* display: none;  */
+}
+.highlight {
+  //background: #fe0;
+  box-shadow: 1rem 0 0 #fe0, -1rem 0 0 #fe0;
+  text-decoration: none;
+}
   .imgCredit a{
     color: black;
     //padding: 2px;

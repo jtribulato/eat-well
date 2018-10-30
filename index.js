@@ -57,7 +57,7 @@ function renderResult(result, index) {
     const ingredients = result.missedIngredients.map((item, index) => item.name);
     return `
   <div data-index="${index}" class="result">
-  <h2 class="result-title"><a href="${result.id}">${result.title}</a></h2>
+  <h2 class="result-title "><span class="highlight"><a href="${result.id}">${result.title}</a></span></h2>
   <div class="image-container-2">
   <img src=${
         result.image
@@ -72,11 +72,11 @@ function renderResult(result, index) {
   <p><span class="info-label">Diet:</span><br> ${result.diets.join(
             ", "
         )}</p>
-  <p><span class="info-label">Ingredients:</span><br> ${ingredients.join(
+  <p class="ingredients"><span class="info-label">Ingredients:</span><br> ${ingredients.join(
             ", "
         )}</p>
-  <p><span class="info-label">Ready in:</span> ${
-        result.readyInMinutes
+  <p class="readyInMinutes"><span class="info-label">Ready in:</span> ${
+        result.readyInMinutes 
         } min.</p>
   </div>
   <div class="clear"></div>
