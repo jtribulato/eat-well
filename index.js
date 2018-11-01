@@ -9,6 +9,8 @@ $(function () {
         event.preventDefault();
         var searchTerm = $(this).find('.js-query').val();
         getRequest(searchTerm);
+        $('.landing-page-container').hide();
+        
     });
 
     $('.cuisine').click(function (event) {
@@ -23,6 +25,7 @@ $(function () {
 });
 
 function getRequest(term, cuisine) {
+    $('.spinner').show();
     let queryObject = {
         cuisine: cuisine || "",
         diet: "",
@@ -44,6 +47,7 @@ function getRequest(term, cuisine) {
         type: "GET",
         success: displayRecipeSearchData,
         error: function (err) {
+            $('.spinner').hide();
             console.log(err);
         }
     };
@@ -54,6 +58,7 @@ function getRequest(term, cuisine) {
 
 
 function displayRecipeSearchData(data) {
+    $('.spinner').hide();
     recipes = data.results;
     const results = recipes.map((item, index) => renderResult(item, index));
     $(".search-results").html(results);
