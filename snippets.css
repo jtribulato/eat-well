@@ -7,3 +7,42 @@
     height:300px;
     margin: 100px auto;
   }
+
+
+
+  .container{
+    width:80%;
+    margin:auto;
+  }
+  
+  .img{
+    width:40%;
+    background-color:blue;
+    height:100px;
+  }
+  .text{
+    width:50%;
+    padding-bottom:20px;
+  }
+  
+  .right{
+    float:right;
+  }
+  .left{
+    float:left;
+  }
+  
+  .clear{
+    clear:both
+  }
+  
+  @media (max-width:400px){
+    .right, .left{
+      float:none;
+      margin: auto;
+    }
+   .img, .text{
+      width:100%;
+    }
+    
+  }
