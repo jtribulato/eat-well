@@ -99,20 +99,10 @@ function renderResult(result, index) {
 }
 
 
-$(".img2").show();
-$(".img3").show();
-$(".img4").show();
 
 
 
-$(".blackbox").show();
-$(".blackbox").hide();
 
-// More requests to API.
-// function displayMainImg(data) {
-//     const img1 = true;
-//     let term = "vegan";
-//    getRequest(term)
-//    const recipes = data.results;
-//
-// }
+
+
+
