@@ -6,13 +6,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Eat Well</title>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-        crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Bevan|Coming+Soon|Homemade+Apple|Just+Another+Hand|K2D|Kaushan+Script|Lalezar|Montserrat|Niramit|Open+Sans|Permanent+Marker|Roboto|Sue+Ellen+Francisco|Yesteryear"
         rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -32,91 +30,73 @@
             </form>
         </div>
     </nav>
-
-
     <main class="main">
 
-        <div class="dropdown-box" hidden>
-            <span class="cuisine">American</span>
-            <span class="cuisine">Chinese</span>
-        </div>
+            
+    
+            <section class="mainSection">
+                <div class="whiteBox">
+                    <form action="#" class="js-search-form js-search-form-center" id="search-term">
+                        <label for="query"> </label>
+                        <input type="text" class="js-query" id="query" placeholder="Enter your food here">
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </section>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" alt="" class="spinner" hidden>
+    
 
-        <section class="mainSection">
-            <div class="whiteBox">
-                <form action="#" class="js-search-form js-search-form-center" id="search-term">
-                    <label for="query"> </label>
-                    <input type="text" class="js-query" id="query" placeholder="Enter your food here">
-                    <button type="submit">Search</button>
-                </form>
-            </div>
-        </section>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" alt="" class="spinner" hidden>
+    <div class="container">
 
-        <div class="container">
-
-            <section>
-              <div class="section-container">
+        <section>
+            <div class="section-container">
                 <h1>asdasdasd</h1>
                 <p>
-                  All code belongs to the poster and no license is enforced. JSFiddle or its authors are not responsible or liable for any loss or damage of any kind during the usage of provided code.
+                    All code belongs to the poster and no license is enforced. JSFiddle or its authors are not
+                    responsible or liable for any loss or damage of any kind during the usage of provided code.
                 </p>
-              </div>
-            </section>
-          
-          
-            <section class="gray">
-              <div class="section-container">
+            </div>
+        </section>
+
+
+        <section class="gray">
+            <div class="section-container">
                 <h2 class="section-title left">title for section</h2>
-                <div class="img right"><img src="img/532567-312x231.jpg" alt="Some text about image"></div>
+                <img class="img right" src="img/515190-312x231.jpg" alt="xyz">
                 <div class="text left">
-                  All code belongs to the poster and no license is enforced. JSFiddle or its authors are not responsible or liable for any loss or damage of any kind during the usage of provided code.
+                    All code belongs to the poster and no license is enforced. JSFiddle or its authors are not
+                    responsible or liable for any loss or damage of any kind during the usage of provided code.
                 </div>
                 <div class="clear"></div>
-              </div>
-            </section>
-          
-            <section>
-              <div class="section-container">
+            </div>
+        </section>
+
+        <section>
+            <div class="section-container">
                 <h2 class="section-title right">title for section</h2>
-                <div class="img left"><img src="img/515190-312x231.jpg" alt="Some text about image"></div>
+                <img class="img left" src="img/532567-312x231.jpg" alt="xyz">
                 <div class="text right">
-                  All code belongs to the poster and no license is enforced. JSFiddle or its authors are not responsible or liable for any loss or damage of any kind during the usage of provided code.
+                    All code belongs to the poster and no license is enforced. JSFiddle or its authors are not
+                    responsible or liable for any loss or damage of any kind during the usage of provided code.
                 </div>
                 <div class="clear"></div>
-              </div>
-            </section>
-          
-            <section class="gray">
-              <div class="section-container">
+            </div>
+        </section>
+
+        <section class="gray">
+            <div class="section-container">
                 <h2 class="section-title left">title for section</h2>
-                <div class="img right"><img src="img/766459-312x231.jpg" alt="Some text about image"></div>
+                <img class="img right" src="img/766459-312x231.jpg" alt="xyz">
                 <div class="text left">
-                  All code belongs to the poster and no license is enforced. JSFiddle or its authors are not responsible or liable for any loss or damage of any kind during the usage of provided code.
+                    All code belongs to the poster and no license is enforced. JSFiddle or its authors are not
+                    responsible or liable for any loss or damage of any kind during the usage of provided code.
                 </div>
                 <div class="clear"></div>
-              </div>
-            </section>
-          
-          
-          </div>
-          
-
-        </div>
-        </div>
-        <div class="clear"></div>
+            </div>
+        </section>
 
 
-
-
-
-
-        <div class="results-container">
-            <h2 class="resultH2" hidden>Results</h2>
-            <div class="search-results"></div>
-        </div>
-
-
-
+    </div>
 
     </main>
 
@@ -124,14 +104,11 @@
 
 
     <footer class="bottomBar">
-        <span class="footerText">Copyright 2018  Eat Well </span>
+        <span class="footerText">Copyright 2018 Eat Well </span>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="index.js"></script>
 </body>
-
-<script src="index.js"></script>
-
-
-
 
 </html>

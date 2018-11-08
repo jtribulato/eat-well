@@ -1,0 +1,82 @@
+
+
+ /************ NAV ************/
+
+ /************ MAIN ************/
+
+ * {
+    box-sizing: border-box;
+  }
+ 
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  .container {
+    width: 100%;
+  }
+ 
+  section {
+    width: 100%;
+    padding: 5%;
+  }
+ 
+  .section-container {
+    max-width: 700px;
+    margin: auto;
+  }
+ 
+  .img {
+    width: 40%;
+    background-color: blue;
+  }
+ 
+  .text {
+    width: 50%;
+    padding: 0 0 20px 0;
+    margin: 0;
+  }
+ 
+  .section-title {
+    width: 50%;
+    padding: 0 0 10px 0;
+    margin: 0;
+    font-size: 1.2em;
+    text-align: left;
+  }
+ 
+  .right {
+    float: right;
+  }
+ 
+  .left {
+    float: left;
+  }
+ 
+  .clear {
+    clear: both;
+  }
+ 
+  .gray {
+    background-color: rgb(240, 240, 240);
+  }
+ 
+  @media (max-width:400px) {
+    .right,
+    .left {
+      float: none;
+      margin: auto;
+    }
+    .img,
+    .text {
+      width: 100%;
+    }
+    .section-title {
+      text-align: center;
+    }
+  }
+ 
+  /************ FOOTER ************/
+ 
