@@ -1,10 +1,4 @@
-
-
- /************ NAV ************/
-
- /************ MAIN ************/
-
- * {
+* {
     box-sizing: border-box;
   }
  
@@ -13,11 +7,81 @@
     margin: 0;
     padding: 0;
   }
- 
   .container {
     width: 100%;
   }
- 
+
+ /************ NAV ************/
+ .navigation {
+    position:fixed;
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: #18c1ee;
+    padding: 10px;
+    border-bottom: 1px black solid;
+
+  }
+  .links {
+       float: right;
+       color: white;
+  }
+
+  .YT-logo {
+    height: 20px;
+  }
+  .YT-text {
+    vertical-align: top;
+    font-weight:700;
+    font-family: 'Montserrat', sans-serif;
+    color: Black;
+    text-decoration: none;
+  }
+  .YT-text a {
+    vertical-align: top;
+    text-decoration: none;
+    color: white;
+  }
+  .YT-text a:hover {
+    color:rgb(247, 170, 224);
+    font-weight:900;
+    font-size: 20px;
+  }
+  .textBold {
+      font-weight:900;
+  }
+  .search-form {
+    margin: 15px;
+  }
+  .search-form-top {
+     margin: 0 0 15px 0;
+     vertical-align: top;
+  }
+  .js-query {
+    border-radius: 5px;
+  }
+ /************ HEADER AREA ************/
+
+ .mainSection {
+    height: 300px;
+    background-image: url("img/iStock_75977769_LARGE-1440x972.jpg");
+    text-align: center;
+    margin: 0 auto;
+  }
+  .whiteBox {
+    display: inline-block;
+    margin: 0 auto;
+    height: 110px;
+    width: 30%;
+    min-width: 250px;
+    background-color: white;
+  }
+  .js-search-form-center {
+    margin: 40px auto 0px;
+  } 
+
+ /************ MAIN ************/
+
   section {
     width: 100%;
     padding: 5%;
@@ -62,7 +126,31 @@
   .gray {
     background-color: rgb(240, 240, 240);
   }
+
+  /************ FOOTER ************/
+
+ .footer {
+    margin: 0 auto 10px;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    clear: both;
+   }
+   .bottomBar {
+     bottom: 0px;
+     background-color: black;
+     height: 137px;
+     text-align: center;
+     padding: 60px;
+   }
+   .footerText {
+     color: white;
+   
+   }
  
+
+/************ MEDIA QUERIES ************/
+
   @media (max-width:400px) {
     .right,
     .left {
@@ -76,7 +164,10 @@
     .section-title {
       text-align: center;
     }
+    .input-search-top {
+        display: none;
+    }
   }
  
-  /************ FOOTER ************/
+
  

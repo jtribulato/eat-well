@@ -1,9 +1,4 @@
-
- /************ NAV ************/
-
- /************ MAIN ************/
-
- * {
+* {
   box-sizing: border-box;
 }
 
@@ -13,80 +8,9 @@ html {
   padding: 0;
   font-family: 'arial', san-serif;
 }
-main {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.container {
-  width: 100%;
-}
-
-section {
-  width: 100%;
-  padding: 10%;
-  /* height: 200px; */
-}
-
-.section-container {
-  max-width: 600px;
-  margin: -55px auto;
-}
-.section-header {
-  height: 100px;
-}
-.img {
-  width: 40%;
-  /* background-color: blue; */
-  /* height: 150px; */
-}
-
-.text {
-  width: 45%;
-  padding: 0 0 20px 0;
-  margin: 0;
-}
-
-.section-title {
-  width: 50%;
-  padding: 0 0 10px 0;
-  margin: 0;
-  font-size: 1.2em;
-  text-align: left;
-}
-.section-title2 {
-  padding: 0 0 10px 45px;
-}
-
-.right {
-  float: right;
-}
-
-.left {
-  float: left;
-}
-
-.clear {
-  clear: both;
-}
-
-.gray {
-  background-color: rgb(247, 247, 247);
-}
-
-
-
-/************ FOOTER ************/
-
-
-
-
-.nav-link{
+ /************ NAV ************/
+ .nav-link{
   margin: 0 10px;
-}
-.spinner {
-  width: 100px;
 }
 .dropdown-box{
   background-color: blue;
@@ -143,12 +67,89 @@ section {
   .js-query {
     border-radius: 5px;
   }
-  .mainImg {
-    max-width: 288px;
-    margin: 0 auto;
-    margin-top: 70px;
 
-  }
+ /************ HEADER AREA ************/
+.mainSection {
+  height: 300px;
+  background-image: url("img/iStock_75977769_LARGE-1440x972.jpg");
+  text-align: center;
+  margin: 0 auto;
+}
+.whiteBox {
+  display: inline-block;
+  margin: 0 auto;
+  height: 110px;
+   width: 450px;
+  background-color: white;
+}
+.js-search-form-center {
+  margin: 40px; auto 0;
+}
+
+ /************ MAIN ************/
+
+
+main {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+}
+
+section {
+  width: 100%;
+  padding: 10%;
+}
+
+.section-container {
+  max-width: 600px;
+  margin: -55px auto;
+}
+.section-header {
+  height: 100px;
+}
+.img {
+  width: 40%;
+}
+.text {
+  width: 45%;
+  padding: 0 0 20px 0;
+  margin: 0;
+}
+.section-title {
+  width: 50%;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 1.2em;
+  text-align: left;
+}
+.section-title2 {
+  padding: 0 0 10px 45px;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+.gray {
+  background-color: rgb(247, 247, 247);
+}
+.spinner {
+  width: 100px;
+}
+
+ /************ MAIN RESULTS AREA ************/
+  
   .info-label {
     font-size: 20px;
     font-weight:900;
@@ -170,109 +171,31 @@ section {
 .highlight a{
   text-decoration: none;
 }
-.img1, .img2, .img3, .img4 {
-  display: inline-block;
-  margin: 0 10px;
+
+.imgCredit a{
+  color: black;
+  text-decoration: none;
+  font-size: 10px;
 }
-.img1 {
-  width: 100%;
-  margin: 0;
+.imgCredit a:hover{
+  text-decoration: underline;
 }
-  .imgCredit a{
-    color: black;
-    text-decoration: none;
-    font-size: 10px;
-  }
-  .imgCredit a:hover{
-    text-decoration: underline;
-  }
-  .creditSmall {
-    font-size: 11px;
-  }
-  hr {
-    max-width: 250px;
-  }
-  .recipes {
-    width: 68%;
-    border: 1px black dotted;
-    margin: 0 auto;
-    padding: 10px;
-  }
-
-  .hide {
-      display: none;
-  }
-  header {
-    text-align: center;
-    margin-top: 50px;
-  }
-  .mainSection {
-    height: 300px;
-    background-image: url("img/iStock_75977769_LARGE-1440x972.jpg");
-    text-align: center;
-    margin: 0 auto;
-  }
-  .whiteBox {
-    display: inline-block;
-    margin: 0 auto;
-    height: 110px;
-     width: 450px;
-    background-color: white;
-  }
-  .js-search-form-center {
-    margin: 40px; auto 0;
-  }
-  /* main {
-    display: block;
-    margin: 0 auto;
-    padding-top: 0px;
-    padding-bottom: 50px;
-    text-align: center;
-  } */
-   
-  
-.mainText {
-  width: 75%;
-  margin: 0 auto;
-} 
-
-
+.creditSmall {
+  font-size: 11px;
+}
+hr {
+  max-width: 250px;
+}
+.hide {
+    display: none;
+}
+ 
   p, h1, h2, h3, h4, h5 {
     text-align: center;
   }
-  .description {
-   max-width: 220px;
-   text-align: center;
-   margin: 0 auto 5px;
 
-  }
-  .titleH2 {
-   text-align: center;
-   margin: 0 auto 10px;
-   font-weight: 900;
-   height:50px;
-   font-size: 25px;
+/************ FOOTER ************/
 
-  }
-  .results {
-    display: inline-grid;
-    padding: 5px;
-  }
-  .imgMainRecipe {
-    max-width: 200px;
-    max-height: 200px;
-    height: 200px;
-    width: 200px;
-    margin: 15px auto;
-    background-color: greenyellow;
-  }
-  .ingredient {
-    text-align: left;
-    margin: 0 0 5px 30px;
-  }
-  .step {
-    padding:10px;
-  }
  .footer {
    margin: 0 auto 10px;
    width: 100%;
@@ -280,15 +203,6 @@ section {
    padding: 20px;
    clear: both;
   }
-  .centerText {
-    text-align: center;
-  }
-  img.thumbnail {
-    max-width: 220px;
-  }
-
-
-
   .bottomBar {
     bottom: 0px;
     background-color: black;
@@ -298,13 +212,13 @@ section {
   }
   .footerText {
     color: white;
-    
+  
   }
 
 
   
  
-
+/************ MEDIA QUERIES ************/
 
 @media (max-width:400px) {
   .right,
@@ -321,9 +235,5 @@ section {
   }
   .input-search-top {
     display: none;
-      }
-  .recipes {
-    width: 100%;
-    margin: 0 auto 18px;
-  }    
+      }    
 }
