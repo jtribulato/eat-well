@@ -10,7 +10,7 @@ html {
 }
  /************ NAV ************/
  .nav-link {
-  margin: 0 10px;  
+  margin: 0 10px;
 }
 .dropdown-box-diet{
   background-color:#1490b3;; ;
@@ -170,7 +170,7 @@ display: inline-block;
 }
 
  /************ MAIN RESULTS AREA ************/
-  
+
   .info-label {
     font-size: 20px;
     font-weight:900;
@@ -214,7 +214,7 @@ hr {
 .hide {
     display: none;
 }
- 
+
   p, h1, h2, h3, h4, h5 {
     text-align: center;
   }
@@ -237,12 +237,12 @@ hr {
   }
   .footerText {
     color: white;
-  
+
   }
 
 
-  
- 
+
+
 /************ MEDIA QUERIES ************/
 
 @media (max-width:450px) {
@@ -254,7 +254,7 @@ hr {
   .img,
   .text {
     width: 100%;
-    
+
   }
   .text {
     float: unset;
@@ -264,8 +264,8 @@ hr {
   }
   .input-search-top {
     display: none;
-      } 
+      }
   .whiteBox {
     width: 300px;
-  }       
+  }
 }

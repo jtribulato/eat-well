@@ -18,14 +18,23 @@
     <img class="YT-logo" src="">&nbsp;
     <span class="YT-text">
       Eat Well
+      <a class="nav-link recipe-link" href="#">Recipe</a>
+      <a class="nav-link diet-link" href="#">Diet</a>
 
-      <a class="nav-link" href="/recipes.html">Recipes</a>
-      <a class="nav-link" href="/cuisines.html">Cuisines</a>
     </span>
   </nav>
 
 
   <main class="main">
+
+    <div class="dropdown-box-diet diet-link" hidden>
+      <span><a class="diet" href="#">Vegan</a></span><br>
+      <span><a class="diet" href="#">Gluten Free</a></span><br>
+      <span><a class="diet" href="#">Dairy Free</a></span><br>
+      <span><a class="diet" href="#">Paleolithic</a></span><br>
+      <span><a class="diet" href="#">Vegetarian</a></span><br>
+    </div>
+
 
     <section class="mainSection">
       <div class="whiteBox">
@@ -34,6 +43,7 @@
           <input type="text" class="js-query" id="query" placeholder="Enter your food here">
           <button type="submit">Search</button>
         </form>
+        <p>Eating crappy food isn't a reward. It's a punishment <br><i>-Drew Carey</i></p>
       </div>
     </section>
 
@@ -92,12 +102,8 @@
       </div>
     </div>
 
-
   </main>
-
-
-
-
+  
   <footer class="bottomBar">
     <span class="footerText">Copyright 2018 Eat Well </span>
   </footer>
