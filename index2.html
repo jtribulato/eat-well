@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width">
     <title>Eat Well</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Bevan|Coming+Soon|Homemade+Apple|Just+Another+Hand|K2D|Kaushan+Script|Lalezar|Montserrat|Niramit|Open+Sans|Permanent+Marker|Roboto|Sue+Ellen+Francisco|Yesteryear"
-        rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Bevan|Coming+Soon|Homemade+Apple|Just+Another+Hand|K2D|Kaushan+Script|Lalezar|Montserrat|Niramit|Open+Sans|Permanent+Marker|Roboto|Sue+Ellen+Francisco|Yesteryear"
+        rel="stylesheet">  -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link href="styles2.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -20,17 +20,21 @@
         <span class="YT-text">
             Eat Well
 
-            <a class="nav-link" href="/recipes.html">Recipes</a>
-            <a class="nav-link" href="/cuisines.html">Cuisines</a>
+            <a class="nav-link recipe-link" href="#">Recipe</a>
+            <a class="nav-link diet-link" href="#">Diet</a>
         </span>
     </nav>
 
 
     <main class="main">
 
-        <div class="dropdown-box" hidden>
-            <span class="cuisine">American</span>
-            <span class="cuisine">Chinese</span>
+        <div class="dropdown-box-diet diet-link" hidden>
+            <span class="diet"><a class="diet" href="#">Vegan</a></span><br>
+            <span class="diet"><a class="diet" href="#">Gluten Free</a></span><br>
+            <span class="diet"><a class="diet" href="#">Dairy Free</a></span><br>
+            <span class="diet"><a class="diet" href="#">Paleolithic</a></span><br>
+            <span class="diet"><a class="diet" href="#">Vegetarian</a></span><br>
+
         </div>
 
         <section class="mainSection">
@@ -50,7 +54,7 @@
                 <div class="section-container">
                     <!-- <h1>EAT WELL</h1> -->
                     <p>
-                        Eating crappy food isn't a reward. It's a punishment <i>-Drew Carey</i>
+                        Eating crappy food isn't a reward. It's a punishment <br><i>-Drew Carey</i>
                     </p>
                 </div>
             </section>
@@ -66,7 +70,7 @@
     <footer class="bottomBar">
         <span class="footerText">Copyright 2018 Eat Well </span>
     </footer>
-    
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
     <script src="index.js"></script>

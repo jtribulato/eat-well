@@ -9,14 +9,23 @@ html {
   font-family: 'arial', san-serif;
 }
  /************ NAV ************/
- .nav-link{
-  margin: 0 10px;
+ .nav-link {
+  margin: 0 10px;  
 }
-.dropdown-box{
-  background-color: blue;
+.dropdown-box-diet{
+  background-color:#1490b3;; ;
   position: fixed;
   top: 40px;
-  width: 100%;
+  width: 110px;
+  height: 110px;
+  margin-left: 175px;
+}
+.diet {
+  color: white;
+  font-weight:500;
+  line-height: 1.3em;
+  text-decoration: none;
+
 }
   .navigation {
     position:fixed;
@@ -75,13 +84,18 @@ html {
   text-align: center;
   margin: 0 auto;
 }
+
 .whiteBox {
   display: inline-block;
   margin: 0 auto;
   height: 110px;
-   width: 450px;
+  width: 40%;
+  min-width: 300px;
   background-color: white;
 }
+
+
+
 .js-search-form-center {
   margin: 40px; auto 0;
 }
@@ -101,7 +115,7 @@ main {
 
 section {
   width: 100%;
-  padding: 10%;
+  padding: 80px 10% 5% 10%;
 }
 
 .section-container {
@@ -111,11 +125,18 @@ section {
 .section-header {
   height: 100px;
 }
+.image-container-2 {
+max-width: 320px;
+display: inline-block;
+}
 .img {
-  width: 40%;
+  /* width: 60%; */
+}
+.result {
+  width: 100%;
 }
 .text {
-  width: 45%;
+  /* width: 45%; */
   padding: 0 0 20px 0;
   margin: 0;
 }
@@ -159,8 +180,12 @@ section {
     margin: 0 auto;
   }
 .ingredients {
+  /* display: none; */
+}
+.cuisine {
   display: none;
 }
+
 .readyInMinutes {
   display: inherit;
 }
@@ -220,7 +245,7 @@ hr {
  
 /************ MEDIA QUERIES ************/
 
-@media (max-width:400px) {
+@media (max-width:450px) {
   .right,
   .left {
     float: none;
@@ -229,11 +254,18 @@ hr {
   .img,
   .text {
     width: 100%;
+    
+  }
+  .text {
+    float: unset;
   }
   .section-title {
     text-align: center;
   }
   .input-search-top {
     display: none;
-      }    
+      } 
+  .whiteBox {
+    width: 300px;
+  }       
 }

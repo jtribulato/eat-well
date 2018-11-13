@@ -4,27 +4,35 @@ const RECIPE_COMPLEX_URL =
 
 let recipes = [];
 
+
+
+
+
+
 $(function () {
     $('.js-search-form').submit(function (event) {
         event.preventDefault();
         var searchTerm = $(this).find('.js-query').val();
         getRequest(searchTerm);
         $('.landing-page-container').hide();
+
+    });
+    
+    $('.diet-link').click(function (event) {
+        event.preventDefault();
+        $('.dropdown-box-diet').show();
+    });
+
+    $('.diet').click(function (event) {
+        event.preventDefault();
+        var diet = $(this).text();
+        getRequest(diet);
         
     });
-
-    $('.cuisine').click(function (event) {
-        event.preventDefault();
-        var cuisine = $(this).text();
-        console.log(cuisine);
-        getRequest("", cuisine);
-    });
-
-
-
 });
 
 function getRequest(term, cuisine) {
+    $('.dropdown-box-diet').hide();
     $('.spinner').show();
     let queryObject = {
         cuisine: cuisine || "",
@@ -33,7 +41,7 @@ function getRequest(term, cuisine) {
         fillIngredients: true,
         instructionsRequired: true,
         addRecipeInformation: true,
-        query: term  || "",
+        query: term || "",
         offset: 0
     };
     const ajaxSettings = {
@@ -54,55 +62,85 @@ function getRequest(term, cuisine) {
     $.ajax(ajaxSettings);
 }
 
-
-
-
 function displayRecipeSearchData(data) {
     $('.spinner').hide();
     recipes = data.results;
     const results = recipes.map((item, index) => renderResult(item, index));
-    $(".search-results").html(results);
+    $(".search-results").html(results);  // shows just the first result [0]
 }
+
+// function renderResult(result, index) {
+//     console.log(result)
+//     const ingredients = result.missedIngredients.map((item, index) => item.name);
+//     console.log(ingredients)
+//     return `
+//   <div data-index="${index}" class="result">
+//   <h2 class="result-title "><span class="highlight">
+//   <a href="${result.id}">${result.title}</a></span></h2>
+//   <div class="image-container-2">
+//   <img src=${
+//         result.image
+//         } alt="search result image" class="result-image">
+//         <br><span class="imgCredit"><span class="creditSmall">Image ©&nbsp;</span><a href="${result.sourceUrl}">${result.sourceName}</a></span>
+//   </div>
+
+//   <div class="info-container">
+//   <p><span class="info-label">Cuisine:</span><br> ${result.cuisines.join(
+//             ", "
+//         )}</p>
+//   <p><span class="info-label">Diet:</span><br> ${result.diets.join(
+//             ", "
+//         )}</p>
+//   <p class="ingredients"><span class="info-label">Ingredients:</span><br> ${ingredients.join(
+//             ", "
+//         )}</p>
+//   <p class="readyInMinutes"><span class="info-label">Ready in:</span> ${
+//         result.readyInMinutes
+//         } min.</p>
+//   </div>
+//   <div class="clear"></div>
+//   <hr>
+//   </div>
+//   `;
+// }
+
+
 
 function renderResult(result, index) {
-    console.log(result)
     const ingredients = result.missedIngredients.map((item, index) => item.name);
     return `
-  <div data-index="${index}" class="result">
-  <h2 class="result-title "><span class="highlight">
-  <a href="${result.id}">${result.title}</a></span></h2>
-  <div class="image-container-2">
-  <img src=${
-        result.image
-        } alt="search result image" class="result-image">
-        <br><span class="imgCredit"><span class="creditSmall">Image ©&nbsp;</span><a href="${result.sourceUrl}">${result.sourceName}</a></span>
-  </div>
-
-  <div class="info-container">
-  <p><span class="info-label">Cuisine:</span><br> ${result.cuisines.join(
+     <section>
+        <div class="section-container">
+            <div data-index="${index}" class="result">
+                <h2 class="result-title "><span class="highlight">
+                <a href="${result.id}">${result.title}</a></span></h2>
+                
+                <div class="image-container-2">
+                <img src=${result.image} alt="search result image" class="result-image img left">
+                </div>
+                  
+                
+                <div class="text right">
+                    <div class="info-container">
+                 <!-- <p><span class="info-label cuisine">Cuisine:</span><br> ${result.cuisines.join(
+             ", "
+         )}</p> -->
+                <p><span class="info-label">Diet:</span><br> ${result.diets.join(
             ", "
         )}</p>
-  <p><span class="info-label">Diet:</span><br> ${result.diets.join(
+                <p class="ingredients"><span class="info-label">Ingredients:</span><br> ${ingredients.join(
             ", "
         )}</p>
-  <p class="ingredients"><span class="info-label">Ingredients:</span><br> ${ingredients.join(
-            ", "
-        )}</p>
-  <p class="readyInMinutes"><span class="info-label">Ready in:</span> ${
+                <p class="readyInMinutes"><span class="info-label">Ready in:</span> ${
         result.readyInMinutes
         } min.</p>
-  </div>
-  <div class="clear"></div>
-  <hr>
-  </div>
-  `;
-}
+                    </div>      
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </section>
 
-
-
-
-
-
-
-
+     `;
+};
 
