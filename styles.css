@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
   }
- 
+
   body,
   html {
     margin: 0;
@@ -13,9 +13,9 @@
   }
 
  /************ NAV ************/
- 
+
  .nav-link {
-    margin: 0 10px;  
+    margin: 0 10px;
   }
 
  .navigation {
@@ -84,7 +84,7 @@
   }
   .js-search-form-center {
     margin: 50px auto 0px;
-  } 
+  }
 
  /************ MAIN ************/
 
@@ -92,23 +92,23 @@
     width: 100%;
     padding: 80px 10% 5% 10%;
   }
- 
+
   .section-container {
     max-width: 700px;
     margin: auto;
   }
- 
+
   .img {
     width: 40%;
     background-color: blue;
   }
- 
+
   .text {
     width: 50%;
     padding: 0 0 20px 0;
     margin: 0;
   }
- 
+
   .section-title {
     width: 50%;
     padding: 0 0 10px 0;
@@ -116,15 +116,15 @@
     font-size: 1.2em;
     text-align: left;
   }
- 
+
   .right {
     float: right;
   }
- 
+
   .left {
     float: left;
   }
- 
+
   .clear {
     clear: both;
   }
@@ -134,7 +134,7 @@
   .clear-left {
     clear: left;
   }
- 
+
   .gray {
     background-color: rgb(240, 240, 240);
   }
@@ -157,9 +157,26 @@
    }
    .footerText {
      color: white;
-   
+
    }
- 
+
+   /************ RESULTS PAGE ************/
+
+ .result-title {
+   text-align: center;
+ }
+
+
+ .spinner {
+   width: 100px;
+   margin: auto;
+   display: block;
+ }
+
+#results-page{
+  min-height:70vh;
+}
+
 
 /************ MEDIA QUERIES ************/
 
@@ -180,6 +197,3 @@
         display: none;
     }
   }
- 
-
- 

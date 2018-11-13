@@ -6,18 +6,19 @@ let recipes = [];
 
 
 
-
-
+console.log("Hi")
 
 $(function () {
     $('.js-search-form').submit(function (event) {
         event.preventDefault();
         var searchTerm = $(this).find('.js-query').val();
         getRequest(searchTerm);
-        $('.landing-page-container').hide();
+        console.log("Hi")
+        $('#landing-page').hide();
+        $('#results-page').show();
 
     });
-    
+
     $('.diet-link').click(function (event) {
         event.preventDefault();
         $('.dropdown-box-diet').show();
@@ -27,9 +28,12 @@ $(function () {
         event.preventDefault();
         var diet = $(this).text();
         getRequest(diet);
-        
+
     });
 });
+
+
+
 
 function getRequest(term, cuisine) {
     $('.dropdown-box-diet').hide();
@@ -69,40 +73,6 @@ function displayRecipeSearchData(data) {
     $(".search-results").html(results);  // shows just the first result [0]
 }
 
-// function renderResult(result, index) {
-//     console.log(result)
-//     const ingredients = result.missedIngredients.map((item, index) => item.name);
-//     console.log(ingredients)
-//     return `
-//   <div data-index="${index}" class="result">
-//   <h2 class="result-title "><span class="highlight">
-//   <a href="${result.id}">${result.title}</a></span></h2>
-//   <div class="image-container-2">
-//   <img src=${
-//         result.image
-//         } alt="search result image" class="result-image">
-//         <br><span class="imgCredit"><span class="creditSmall">Image ©&nbsp;</span><a href="${result.sourceUrl}">${result.sourceName}</a></span>
-//   </div>
-
-//   <div class="info-container">
-//   <p><span class="info-label">Cuisine:</span><br> ${result.cuisines.join(
-//             ", "
-//         )}</p>
-//   <p><span class="info-label">Diet:</span><br> ${result.diets.join(
-//             ", "
-//         )}</p>
-//   <p class="ingredients"><span class="info-label">Ingredients:</span><br> ${ingredients.join(
-//             ", "
-//         )}</p>
-//   <p class="readyInMinutes"><span class="info-label">Ready in:</span> ${
-//         result.readyInMinutes
-//         } min.</p>
-//   </div>
-//   <div class="clear"></div>
-//   <hr>
-//   </div>
-//   `;
-// }
 
 
 
@@ -114,12 +84,12 @@ function renderResult(result, index) {
             <div data-index="${index}" class="result">
                 <h2 class="result-title "><span class="highlight">
                 <a href="${result.id}">${result.title}</a></span></h2>
-                
+
                 <div class="image-container-2">
                 <img src=${result.image} alt="search result image" class="result-image img left">
                 </div>
-                  
-                
+
+
                 <div class="text right">
                     <div class="info-container">
                  <!-- <p><span class="info-label cuisine">Cuisine:</span><br> ${result.cuisines.join(
@@ -134,7 +104,7 @@ function renderResult(result, index) {
                 <p class="readyInMinutes"><span class="info-label">Ready in:</span> ${
         result.readyInMinutes
         } min.</p>
-                    </div>      
+                    </div>
                 </div>
             </div>
         </div>
@@ -143,4 +113,3 @@ function renderResult(result, index) {
 
      `;
 };
-
