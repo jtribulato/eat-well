@@ -8,8 +8,6 @@ let state={
 };
 
 
-console.log("Hi")
-
 $(function () {
   $('.js-search-form').submit(function (event) {
     event.preventDefault();
@@ -32,6 +30,7 @@ $(function () {
     }else{
       $('.dropdown-box-diet').show();
     }
+    console.log(state.showDropdown);
     state.showDropdown=!state.showDropdown;
   });
 
@@ -78,21 +77,31 @@ function getRequest(term, cuisine) {
 function displayRecipeSearchData(data) {
   $('.spinner').hide();
   recipes = data.results;
+  console.log(data.results);
   const results = recipes.map((item, index) => renderResult(item, index));
-  $(".search-results").html(results);  // shows just the first result [0]
+  $(".search-results").html(results);  // shows just the first result => results[0]
+  
 }
 
 
-
+// sourceName: "Foodie Crush"
+// sourceUrl: "http://www.foodiecrush.com/2011/08/16/craving-5-fresh-and-simple-avocado-salads/"
 
 function renderResult(result, index) {
   const ingredients = result.missedIngredients.map((item, index) => item.name);
+
+  if (index % 2 === 0) {  ()=> { 
+      $('.temp').addClass("gray"); 
+      };
+    } else {
+      $('.temp').addClass("none");
+  };
   return `
-  <section>
+  <section class="temp ">  
   <div class="section-container">
   <div data-index="${index}" class="result">
   <h2 class="result-title "><span class="highlight">
-  <a href="${result.id}">${result.title}</a></span></h2>
+  <a href="${result.sourceUrl}">${result.title}</a></span></h2>
 
   <div class="image-container-2">
   <img src=${result.image} alt="search result image" class="result-image img left">
