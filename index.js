@@ -84,8 +84,6 @@ function displayRecipeSearchData(data) {
 }
 
 
-// sourceName: "Foodie Crush"
-// sourceUrl: "http://www.foodiecrush.com/2011/08/16/craving-5-fresh-and-simple-avocado-salads/"
 
 function renderResult(result, index) {
   const ingredients = result.missedIngredients.map((item, index) => item.name);
