@@ -83,13 +83,16 @@ html {
 }
 .js-query {
   border-radius: 5px;
+
 }
 input {
   border-color: #1490b3;
   border-style: double;
 }
-.magnify {
-  height: 12px;
+button {
+  background-color: #b4dfeb;
+  border-color: #b4dfeb;
+  border-radius: 5px;
 }
 /************ HEADER AREA ************/
 
@@ -97,7 +100,6 @@ input {
   height: 300px;
   background-image: url("img/iStock_75977769_LARGE-1440x972.jpg");
   text-align: center;
-  /* margin: 0 auto; */
 }
 .whiteBox {
   display: inline-block;
@@ -108,7 +110,7 @@ input {
   background-color: white;
 }
 .js-search-form-center {
-  margin: 50px auto 0px;
+  margin: 40px auto 0px;
 }
 .quote {
   font-weight: 600;
@@ -233,3 +235,9 @@ section {
     display: none;
   }
 }
+
+
+
+
+
+

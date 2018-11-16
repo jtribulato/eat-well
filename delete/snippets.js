@@ -1,5 +1,0 @@
-
-
-$(".blackbox").show();
-$(".blackbox").hide();
-
