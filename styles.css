@@ -67,9 +67,10 @@ html {
   color: white;
 }
 .YT-text a:hover {
-  color:rgb(247, 170, 224);
-  font-weight:900;
-  font-size: 20px;
+  /* color:rgb(247, 170, 224); */
+  color: black;
+  font-weight:600;
+  font-size: 16px;
 }
 .textBold {
   font-weight:900;
@@ -77,13 +78,8 @@ html {
 .search-form {
   margin: 15px;
 }
-.search-form-top {
-  margin: 0 0 15px 0;
-  vertical-align: top;
-}
 .js-query {
   border-radius: 5px;
-
 }
 input {
   border-color: #1490b3;
