@@ -87,15 +87,14 @@ function displayRecipeSearchData(data) {
 
 function renderResult(result, index) {
   const ingredients = result.missedIngredients.map((item, index) => item.name);
-
-  if (index % 2 === 0) {  ()=> { 
-      $('.temp').addClass("gray"); 
-      };
+  let classname = '';
+  if (index % 2 === 0) {  
+      classname = 'gray'; 
     } else {
-      $('.temp').addClass("none");
+      classname = 'none';
   };
   return `
-  <section class="temp ">  
+  <section class="temp ${classname}">  
   <div class="section-container">
   <div data-index="${index}" class="result">
   <h2 class="result-title "><span class="highlight">
