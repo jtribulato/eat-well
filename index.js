@@ -103,7 +103,7 @@ function renderResult(result, index) {
   <div class="image-container-2">
   <img src=${result.image} alt="${result.title}" class="result-image img left">
   <div class="clear-left"></div>
-  <div><span class="creditSmall">Photo Credit:</span> <a class="imgCredit creditSmall" href="${result.sourceUrl}" alt="link to recipe">${result.creditsText}</a></div>
+  <div><span class="creditSmall textBold">Photo Credit:</span> <a class="imgCredit creditSmall" href="${result.sourceUrl}" alt="link to recipe">${result.creditsText}</a></div>
   </div>
 
 

@@ -185,7 +185,7 @@ section {
 a.imgCredit, a.imgCredit, a.imgCredit:visited {
   color: black;
   text-decoration: none;
-  font-size: 10px;
+  font-size: 11px;
 }
 .imgCredit, a:hover{
   text-decoration: underline;
