@@ -139,7 +139,7 @@ section {
 .text {
   width: 50%;
   padding: 0 0 20px 0;
-  margin: -225px 0 0 0;
+  margin: -215px 0 0 0;
 }
 .text2 {
   width: 50%;
@@ -176,8 +176,10 @@ section {
   background-color: #f0f0f0;
 }
 .gray2 {
-  background: linear-gradient(#eeeeee, #529aa2);
+  /* background: linear-gradient(#eeeeee, #529aa2);   */
+  background: linear-gradient(#fafafa, #18c0eedb);
 }
+
 .info-label {
   font-weight: bold;
 
@@ -187,7 +189,7 @@ a.imgCredit, a.imgCredit, a.imgCredit:visited {
   text-decoration: none;
   font-size: 11px;
 }
-.imgCredit, a:hover{
+.imgCredit, a:hover a.imgCredit:hover {
   text-decoration: underline;
 }
 .creditSmall {
@@ -217,13 +219,15 @@ a.imgCredit, a.imgCredit, a.imgCredit:visited {
 
 /************ RESULTS PAGE ************/
 
-a.result-title, a.result-title:visited, a.result-title:hover{
+a.result-title, a.result-title:visited{
   text-align: center;
   color: #73a510;
   /* color: green; */
   text-decoration: none;
 }
-
+a.result-title:hover {
+  text-decoration: underline;
+}
 
 
 .spinner {
@@ -238,7 +242,7 @@ a.result-title, a.result-title:visited, a.result-title:hover{
 
 /************ MEDIA QUERIES ************/
 
-@media (max-width:400px) {
+@media (max-width:415px) {
   .right,
   .left {
     float: none;
@@ -254,6 +258,12 @@ a.result-title, a.result-title:visited, a.result-title:hover{
   .input-search-top {
     display: none;
   }
+  .text2, .text {
+    width: 90%;
+    padding: 0 0 20px 0;
+    margin: 0;
+  }
+
 }
 
 
