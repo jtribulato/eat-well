@@ -98,7 +98,7 @@ function renderResult(result, index) {
   <div class="section-container">
   <div data-index="${index}" class="result">
   <h2 class=""><span class="highlight">
-  <a class="result-title" href="${result.sourceUrl}">${result.title}</a></span></h2>
+  <a class="result-title" href="${result.sourceUrl}" target="_blank">${result.title}</a></span></h2>
 
   <div class="image-container-2">
   <img src=${result.image} alt="${result.title}" class="result-image img left">
