@@ -97,11 +97,13 @@ function renderResult(result, index) {
   <section class="temp ${classname}">  
   <div class="section-container">
   <div data-index="${index}" class="result">
-  <h2 class="result-title "><span class="highlight">
-  <a href="${result.sourceUrl}">${result.title}</a></span></h2>
+  <h2 class=""><span class="highlight">
+  <a class="result-title" href="${result.sourceUrl}">${result.title}</a></span></h2>
 
   <div class="image-container-2">
-  <img src=${result.image} alt="search result image" class="result-image img left">
+  <img src=${result.image} alt="${result.title}" class="result-image img left">
+  <div class="clear-left"></div>
+  <div><span class="creditSmall">Photo Credit:</span> <a class="imgCredit creditSmall" href="${result.sourceUrl}" alt="link to recipe">${result.creditsText}</a></div>
   </div>
 
 
