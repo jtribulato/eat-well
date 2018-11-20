@@ -33,14 +33,7 @@ $(function () {
     console.log(state.showDropdown);
     state.showDropdown=!state.showDropdown;
   });
-
-
-
-
 });
-
-
-
 
 function getRequest(term, cuisine) {
   $('#landing-page').hide();
