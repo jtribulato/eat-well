@@ -1,12 +1,10 @@
 const RECIPE_COMPLEX_URL =
 "https://spoonacular-recipe-food-nutrition-v1.p.mashape.com/recipes/searchComplex";
 
-
 let recipes = [];
 let state={
   showDropdown:false
 };
-
 
 $(function () {
   $('.js-search-form').submit(function (event) {
@@ -21,7 +19,6 @@ $(function () {
     var diet = $(this).text();
     getRequest(diet);
   });
-
 
   $('.diet-link').click(function (event) {
     event.preventDefault();
@@ -98,7 +95,6 @@ function renderResult(result, index) {
   <div class="clear-left"></div>
   <div><span class="creditSmall textBold">Photo Credit:</span> <a class="imgCredit creditSmall" href="${result.sourceUrl}" alt="link to recipe">${result.creditsText}</a></div>
   </div>
-
 
   <div class="text right">
   <div class="info-container">
